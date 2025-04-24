@@ -5,15 +5,15 @@ const Footer = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   return (
-    <footer className="relative bg-gradient-to-br from-[#1f1c2c] via-[#302b63] to-[#24243e] text-white px-6 sm:px-12 lg:px-24 pt-16 pb-10">
+    <footer className="relative bg-gradient-to-br from-[#1f1c2c] via-[#302b63] to-[#24243e] text-white px-6 sm:px-12 lg:px-24 pt-16 pb-10 w-full z-10">
       {/* Neon glow circle */}
       <div className="absolute -top-10 left-1/2 w-96 h-96 bg-pink-400 opacity-20 rounded-full blur-3xl transform -translate-x-1/2 -z-10"></div>
 
       {/* Main content */}
-      <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-10 items-center text-center sm:text-left">
+      <div className="max-w-7xl mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center text-center sm:text-left">
         {/* Branding */}
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-wide text-yellow-400">Ferosainteriorandconstruction</h2>
+          <h2 className="text-4xl font-bold tracking-wide text-yellow-400">Ferosa Interior And Construction</h2>
           <p className="text-white/80 text-sm">
             Elegant Spaces ✨ | Modern Designs 🛋 | Trusted Craftsmanship 🛠
           </p>
@@ -69,7 +69,7 @@ const Footer = () => {
       {/* Divider & Copyright */}
       <div className="border-t border-white/20 my-8"></div>
       <div className="text-center text-white/70 text-sm">
-        © {new Date().getFullYear()} All rights reserved by <span className="text-white font-semibold">GrowMore19</span>.
+        © {new Date().getFullYear()} All rights reserved by <span className="text-white font-semibold">growMore19</span>.
       </div>
 
       {/* Scroll to Top Button */}

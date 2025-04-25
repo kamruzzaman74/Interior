@@ -6,24 +6,26 @@ import {
   FaHome,
   FaBriefcase,
   FaBuilding,
-  FaUtensils,
+  FaUtensils, // Using FaUtensils for Kitchen design
   FaStore,
   FaBed,
-} from 'react-icons/fa';
+} from 'react-icons/fa'; // Standard react-icons/fa package
+
 import Navbar from './Navbar';
 
+// Updated list of services with new icons
 const services = [
   {
     title: 'Luxury Living Rooms',
     desc: 'Custom-designed living spaces with premium furniture and artistic decor.',
-    img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c',
+    img: 'lljpg.jpg',
     icon: <FaCouch className="text-3xl text-yellow-600" />,
     features: ['Designer layout', 'Ambient lighting', 'Luxury finishes'],
   },
   {
     title: 'Creative Wall Designs',
     desc: 'Transform your walls with textures, patterns, and eco-friendly paints.',
-    img: 'rr.webp',
+    img: 'an3.jpg', // Example image
     icon: <FaPaintRoller className="text-3xl text-yellow-600" />,
     features: ['Modern textures', 'Custom patterns', 'Sustainable materials'],
   },
@@ -44,7 +46,7 @@ const services = [
   {
     title: 'Apartment Interior',
     desc: 'Make your apartment a luxury space with our smart layouts.',
-    img: 'ttwebp.webp',
+    img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c',
     icon: <FaBuilding className="text-3xl text-yellow-600" />,
     features: ['Space optimization', 'Stylish storage', 'Elegant design'],
   },
@@ -58,14 +60,14 @@ const services = [
   {
     title: 'Restaurant Interior',
     desc: 'Create memorable dining experiences with stunning restaurant designs.',
-    img: 'https://images.unsplash.com/photo-1600891964599-f61ba0e24092',
+    img: 'vvv.webp',
     icon: <FaUtensils className="text-3xl text-yellow-600" />,
     features: ['Ambiance lighting', 'Functional layout', 'Brand colors'],
   },
   {
     title: 'Barber Shop Design',
     desc: 'Modern and functional barber shop interiors for a premium feel.',
-    img: 'hhg.webp',
+    img: 'zzz.PNG',
     icon: <FaStore className="text-3xl text-yellow-600" />,
     features: ['Mirror setups', 'Waiting zone', 'Barber station design'],
   },
@@ -75,6 +77,13 @@ const services = [
     img: 'mmm.webp',
     icon: <FaBed className="text-3xl text-yellow-600" />,
     features: ['Cozy themes', 'Modern tubs & showers', 'Ambient lighting'],
+  },
+  {
+    title: 'Kitchen Interior Design',
+    desc: 'Modern kitchens with sleek cabinets, functional layout, and premium materials.',
+    img: 'ccc.PNG',
+    icon: <FaUtensils className="text-3xl text-yellow-600" />, // Using FaUtensils for Kitchen
+    features: ['Modular cabinets', 'Smart storage', 'Durable countertops'],
   },
 ];
 
@@ -106,7 +115,7 @@ const InteriorServices = () => {
           ✨ Interior Design Services in Bangladesh
         </motion.h2>
 
-        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, i) => (
             <motion.div
               key={i}

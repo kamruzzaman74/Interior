@@ -7,6 +7,7 @@ import Services from "./Services";
 import AICostEstimator from "./AICostEstimator";
 import Footer from "./Footer";
 import AnimatedFinalComponent  from "./AnimatedFinalComponent"
+import Portfolio from "./Portfolio"
 
 export default function Home() {
   return (
@@ -71,6 +72,7 @@ export default function Home() {
       {/* Sections with Animations */}
       <WhyPickMe />
       <Services />
+      <Portfolio/>
       <TruthInDecoration />
       <AICostEstimator />
       <AnimatedFinalComponent/>

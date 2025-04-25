@@ -33,21 +33,21 @@ const AnimatedFinalComponent = () => {
           Where luxury meets innovation, creating spaces that elevate your lifestyle to new heights. Immerse yourself in a world of tailored design.
         </p>
 
-        {/* Moving Dynamic Elements */}
+        {/* Dynamic Lines Animation */}
         <motion.div
           className="absolute top-24 left-16"
-          animate={{ scale: [1, 1.1, 1], rotate: [0, 20, 0] }}
+          animate={{ x: [0, 15, 0], rotate: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 4, repeatType: "loop" }}
         >
-          <div className="w-48 h-48 bg-gradient-to-r from-teal-300 to-blue-500 rounded-full shadow-xl"></div>
+          <div className="w-80 h-2 bg-gradient-to-r from-teal-300 to-blue-500 transform rotate-45"></div>
         </motion.div>
 
         <motion.div
           className="absolute bottom-24 right-16"
-          animate={{ scale: [1, 1.2, 1], rotate: [0, -15, 0] }}
+          animate={{ x: [0, -15, 0], rotate: [0, -10, 0] }}
           transition={{ repeat: Infinity, duration: 5, repeatType: "loop" }}
         >
-          <div className="w-48 h-48 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full shadow-xl"></div>
+          <div className="w-80 h-2 bg-gradient-to-r from-pink-400 to-orange-500 transform rotate-45"></div>
         </motion.div>
 
         {/* Modern Section */}
@@ -60,7 +60,7 @@ const AnimatedFinalComponent = () => {
           </p>
         </div>
 
-        {/* Features with Fancy Icons */}
+        {/* Features with Fancy Border and Shadows */}
         <div className="space-y-6">
           <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
             Why Choose Us?
@@ -68,10 +68,10 @@ const AnimatedFinalComponent = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-gray-700">
             <motion.div
               className="flex items-center space-x-3"
-              animate={{ x: [0, 10, 0] }}
+              animate={{ x: [0, 20, 0] }}
               transition={{ repeat: Infinity, duration: 3, repeatType: "loop" }}
             >
-              <div className="p-3 bg-gradient-to-r from-purple-400 to-pink-500 text-white rounded-full shadow-lg">
+              <div className="p-4 bg-gradient-to-r from-purple-400 to-pink-500 text-white rounded-md shadow-2xl">
                 <i className="fas fa-leaf text-xl"></i>
               </div>
               <div>
@@ -82,10 +82,10 @@ const AnimatedFinalComponent = () => {
 
             <motion.div
               className="flex items-center space-x-3"
-              animate={{ x: [0, -10, 0] }}
+              animate={{ x: [0, -20, 0] }}
               transition={{ repeat: Infinity, duration: 3, repeatType: "loop" }}
             >
-              <div className="p-3 bg-gradient-to-r from-yellow-300 to-orange-500 text-white rounded-full shadow-lg">
+              <div className="p-4 bg-gradient-to-r from-yellow-300 to-orange-500 text-white rounded-md shadow-2xl">
                 <i className="fas fa-lightbulb text-xl"></i>
               </div>
               <div>
@@ -99,7 +99,7 @@ const AnimatedFinalComponent = () => {
               animate={{ scale: [1, 1.05, 1] }}
               transition={{ repeat: Infinity, duration: 3, repeatType: "loop" }}
             >
-              <div className="p-3 bg-gradient-to-r from-teal-400 to-blue-500 text-white rounded-full shadow-lg">
+              <div className="p-4 bg-gradient-to-r from-teal-400 to-blue-500 text-white rounded-md shadow-2xl">
                 <i className="fas fa-tv text-xl"></i>
               </div>
               <div>
@@ -125,4 +125,3 @@ const AnimatedFinalComponent = () => {
 };
 
 export default AnimatedFinalComponent;
-
